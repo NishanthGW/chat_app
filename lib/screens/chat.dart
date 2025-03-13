@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:dotted_border/dotted_border.dart';
 
 class chat_page extends StatelessWidget {
   const chat_page({super.key});
@@ -51,7 +52,72 @@ class chat_page extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.end,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset("assets/content.png", height: 180),
+                          Container(
+                            color: const Color.fromARGB(255, 238, 235, 235),
+                            child: DottedBorder(
+                              color: Colors.blue,
+                              strokeWidth: 2,
+                              dashPattern: [2, 2],
+                              borderType: BorderType.RRect,
+                              padding: EdgeInsets.all(10),
+
+                              // radius: Radius.circular(10),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+
+                                children: [
+                                  Image.asset("assets/media.png", height: 180),
+                                  Text(
+                                    "Homemade Dumplings",
+                                    style: TextStyle(
+                                      fontSize: 11,
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "everydumplingever.com",
+                                    style: TextStyle(
+                                      fontSize: 11,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          DottedBorder(
+                            color: Colors.blue,
+                            strokeWidth: 2,
+                            dashPattern: [2, 2],
+                            borderType: BorderType.RRect,
+                            child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              height: 30,
+                              decoration: BoxDecoration(
+                                color: const Color.fromARGB(
+                                  255,
+                                  82,
+                                  79,
+                                  79,
+                                ), // Set background color to grey
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(20),
+                                  topRight: Radius.circular(20),
+                                  bottomLeft: Radius.circular(20),
+                                  bottomRight: Radius.circular(5),
+                                ),
+                              ),
+                              alignment: Alignment.center,
+                              child: Text(
+                                "or we could make this?",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12,
+                                ), // Optional: Set text color for better contrast
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ],
