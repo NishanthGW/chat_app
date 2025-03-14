@@ -95,12 +95,7 @@ class chat_page extends StatelessWidget {
                               padding: EdgeInsets.symmetric(horizontal: 10),
                               height: 30,
                               decoration: BoxDecoration(
-                                color: const Color.fromARGB(
-                                  255,
-                                  82,
-                                  79,
-                                  79,
-                                ), // Set background color to grey
+                                color: const Color.fromARGB(255, 82, 79, 79),
                                 borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(20),
                                   topRight: Radius.circular(20),
@@ -114,7 +109,7 @@ class chat_page extends StatelessWidget {
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 12,
-                                ), // Optional: Set text color for better contrast
+                                ),
                               ),
                             ),
                           ),
@@ -138,12 +133,7 @@ class chat_page extends StatelessWidget {
                         ),
                         height: 40,
                         decoration: BoxDecoration(
-                          color: const Color.fromARGB(
-                            255,
-                            232,
-                            230,
-                            233,
-                          ), // Set background color to grey
+                          color: const Color.fromARGB(255, 232, 230, 233),
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(20),
                             topRight: Radius.circular(20),
@@ -151,14 +141,10 @@ class chat_page extends StatelessWidget {
                             bottomRight: Radius.circular(20),
                           ),
                         ),
-                        alignment:
-                            Alignment
-                                .center, // Centers text inside the container
+                        alignment: Alignment.center,
                         child: Text(
                           "that looks so good!",
-                          style: TextStyle(
-                            color: Colors.black,
-                          ), // Optional: Set text color for better contrast
+                          style: TextStyle(color: Colors.black),
                         ),
                       ),
                     ],
@@ -181,12 +167,7 @@ class chat_page extends StatelessWidget {
                         ),
                         height: 40,
                         decoration: BoxDecoration(
-                          color: const Color.fromARGB(
-                            255,
-                            232,
-                            230,
-                            233,
-                          ), // Set background color to grey
+                          color: const Color.fromARGB(255, 232, 230, 233),
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(20),
                             topRight: Radius.circular(20),
@@ -197,9 +178,7 @@ class chat_page extends StatelessWidget {
                         alignment: Alignment.center,
                         child: Text(
                           "Let's do it!",
-                          style: TextStyle(
-                            color: Colors.black,
-                          ), // Optional: Set text color for better contrast
+                          style: TextStyle(color: Colors.black),
                         ),
                       ),
                       SizedBox(width: 5),
@@ -210,12 +189,7 @@ class chat_page extends StatelessWidget {
                         ),
                         height: 40,
                         decoration: BoxDecoration(
-                          color: const Color.fromARGB(
-                            255,
-                            232,
-                            230,
-                            233,
-                          ), // Set background color to grey
+                          color: const Color.fromARGB(255, 232, 230, 233),
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(20),
                             topRight: Radius.circular(20),
@@ -223,14 +197,10 @@ class chat_page extends StatelessWidget {
                             bottomRight: Radius.circular(5),
                           ),
                         ),
-                        alignment:
-                            Alignment
-                                .center, // Centers text inside the container
+                        alignment: Alignment.center,
                         child: Text(
                           "Great!",
-                          style: TextStyle(
-                            color: Colors.black,
-                          ), // Optional: Set text color for better contrast
+                          style: TextStyle(color: Colors.black),
                         ),
                       ),
 
@@ -242,12 +212,7 @@ class chat_page extends StatelessWidget {
                         ),
                         height: 40,
                         decoration: BoxDecoration(
-                          color: const Color.fromARGB(
-                            255,
-                            232,
-                            230,
-                            233,
-                          ), // Set background color to grey
+                          color: const Color.fromARGB(255, 232, 230, 233),
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(20),
                             topRight: Radius.circular(20),
@@ -255,14 +220,10 @@ class chat_page extends StatelessWidget {
                             bottomRight: Radius.circular(5),
                           ),
                         ),
-                        alignment:
-                            Alignment
-                                .center, // Centers text inside the container
+                        alignment: Alignment.center,
                         child: Text(
                           "Great!",
-                          style: TextStyle(
-                            color: Colors.black,
-                          ), // Optional: Set text color for better contrast
+                          style: TextStyle(color: Colors.black),
                         ),
                       ),
                     ],
@@ -313,9 +274,6 @@ class chat_page extends StatelessWidget {
 Widget _buildIcon(String assetPath) {
   return Padding(
     padding: const EdgeInsets.all(8.0),
-    child: Image.asset(
-      assetPath,
-      height: 10,
-    ), // Increased height for better visibility
+    child: Image.asset(assetPath, height: 10),
   );
 }
